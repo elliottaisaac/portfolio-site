@@ -1,0 +1,51 @@
+@media only screen and (max-width:800px){
+    #hamburgerMenu{
+        width:24vw;
+        left: calc(100% - 24vw);
+    }
+   
+    #mockup{
+        display: none;
+    }
+    .MOO{
+        transform: translateX(400vw);
+    }
+
+    #lead{
+        grid-template-rows: 2fr 4fr;
+        grid-template-columns: auto;
+        height: calc(100vh - 200px);
+        margin-top: 0px;
+    }
+
+    #lead h1{
+        grid-row: 1 / span 1;
+        grid-column: unset;
+        margin:16px 10% 0px 10%;
+    }
+
+    #signUp{
+        grid-row: 2 / span 1;
+        grid-column: unset;
+        padding: 0px;
+        margin: auto;
+        width: 88vw;
+    }
+    #signUp input{
+        max-width: unset;
+        margin: auto auto 16px 10%;
+    }
+
+    #signUp button{
+        margin-bottom: 32px;
+        height: 48px;
+        width: 78px;
+    }
+    #signUp h3{
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+    .logIn{
+        width:80%;
+    }
+}

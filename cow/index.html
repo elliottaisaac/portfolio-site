@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+	<title>Cow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://use.typekit.net/hpl3pdc.css">
+</head>
+<body>
+<header>
+	<span class="spacer72"></span>
+	<nav>
+		<div id="navbar">
+			<div id="masthead">
+				<a href="index.html" id="navLogo"></a>
+				<div id="navMenu">
+					<div id="hamburger">
+						<svg width="40" height="4"><rect width="40" height="4" style="fill:rgb(255,255,255);"/></svg>
+						<svg width="40" height="4"><rect width="40" height="4" style="fill:rgb(255,255,255);"/></svg>
+						<svg width="40" height="4"><rect width="40" height="4" style="fill:rgb(255,255,255);"/></svg>
+					</div>
+					<ul id="hamburgerMenu">
+						<li><a href="loggedout.html" class="navLink">Log Out</a></li>
+						<li><a href="#" class="navLink">Bank</a></li>
+						<li><a href="#" class="navLink">Invest</a></li>
+						<li><a href="#" class="navLink">Budget</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<main>
+	<section id="landingPage2Column">
+		<div class="mockup">
+			<img class="mockup" src="img/mockup.png">
+		</div>
+		<div id="landingPageAnimation">
+			<div id="animationContainer"></div>
+		</div>
+	</section>
+	
+	<div id="lead">
+		<h1><span id="typing"></span>
+            <span id="cursor">
+                <svg width="12" height="168">
+                  <rect id="cursorSVG" width="12">
+                </svg>
+            </span> 
+		  &nbsp;
+		</h1>
+		<div id="signUp">
+			<h3>Become a Cash Cow</h3>
+			<input type="text" autocomplete="off"  id="username" placeholder="choose your username">
+			<input type="password" id="password" placeholder="choose your password">
+			<button>Done!</button>
+		</div>
+	</div>
+</main>
+
+<script src="js/global-scripts.js"></script>	
+<script src="js/landing-page.js"></script>	
+</body>
+</html>

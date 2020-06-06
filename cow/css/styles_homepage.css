@@ -1,0 +1,191 @@
+
+#landingPage2Column{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    margin-bottom: 10000px;
+}
+
+.mockup{
+    height: 500px;
+    margin:auto;
+    display: block;
+}
+
+#landingPageAnimation{
+    grid-column: 2/span 1;
+    overflow: hidden;
+   /* background-color: /*#373449  #00cc66; */
+    /* background-image: linear-gradient(#00cc66 0%,#00cc66 20%, #00b26e 100%, #373449 100%); */
+}
+
+#animationContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    margin-bottom: 72px;
+}
+
+#animationContainer div{
+    width: 0vw;
+    height: 0vw;
+    transition: width 2s ease-out, height 2s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: default;
+}
+
+#text1, #text2, #typing, .lm, #goodbye h1, #hello, #dashboard h2{
+    color:var(--white);
+    font-size: 120px;
+    position: relative;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding:48px;
+}
+
+#text2{
+    color:#373449;
+}
+
+.CowSpots{
+    background-color:#e9e8e8;
+    background-image: url("../img/spots.png");
+    height: 600px;
+    width: 100vw;
+}   
+
+.MOO{
+    font-size: 480px;
+    line-height: 100%;
+    color: #00cc66;
+    font-family: cubano, sans-serif;
+    transform: translateX(200vw);
+    transition: 8s transform ease-out;
+    margin-top: calc(800px + 10vh);
+    cursor: default;
+    letter-spacing: -2px;
+}
+
+#lead{
+    margin-top:10vh;
+}
+
+.lm{
+    margin-top:20vw;
+    color: var(--green); 
+    font-size: 32px;
+    cursor:pointer;
+    position: absolute;
+}
+.lm:hover{
+    color: var(--pink);
+}
+
+#typing{
+    font-size: 8vw;
+    padding: 0px;
+    line-height: 6vw;
+    cursor: default;
+}
+
+#cursor{
+    position: absolute;
+    transform: translateY(6px);
+}
+
+#cursorSVG{
+    height: 6vw;
+    fill: var(--white);
+}
+
+#lead{
+    height: auto;
+    margin-top: 160px;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+#lead h1{
+    grid-column: 1 / span 1;
+    margin:auto 10% ;
+    width: 80%;
+}
+
+
+#signUp{
+    grid-column: 2 / span 1;
+    background-color:  var(--white);
+    margin-right: 10vw;
+    margin-bottom: auto;
+    margin-left: auto;
+    border-radius: 60px;
+    z-index: 3;
+    padding: 60px 0px;
+}
+
+#signUp h3{
+    color: var(--black);
+    font-family: var(--script);
+    font-size: 32px;
+    margin-left: 10%;
+    margin-top: 24px;
+    display: inline-block;
+    border-bottom: 2px solid var(--pink);
+}
+
+#signUp input{
+    width: calc(80% - 12px);
+    max-width: 51%;
+    margin: auto auto 24px 10%;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    height: 48px;
+    background-color: var(--black);
+    color: var(--green);
+    font-family: var(--cubano);
+    font-family: var(--sans);
+    font-size: 24px;
+    padding-left: 12px;
+    /* border: 2px solid var(--pink); */
+}
+
+::placeholder, ::-webkit-input-placeholder{ 
+    color: var(--white);
+    opacity: 1; 
+    font-family: var(--sans);
+  }
+
+  #signUp button{
+      height: 60px;
+      width: 97px;
+      background-color: var(--green);
+      color: var(--white);
+      font-family: var(--script);
+      font-size: 24px;
+      border-radius: 12px;
+      margin-left: 10%;
+      margin-right: calc(90% - 60px);
+      outline: none;
+  }
+  #signUp button:hover{
+    background-color: var(--pink);
+  }
+  #signUp button:active{
+    background-color: var(--gold);
+  }
+
+  .logIn{
+    width:40%;
+    max-width: 700px;
+    margin-right: auto !important;
+    position: relative;
+  }

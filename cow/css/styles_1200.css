@@ -1,0 +1,16 @@
+@media only screen and (max-width:1200px){
+    nav{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .wave:nth-child(10), .wave:nth-child(11),.wave:nth-child(12), .wave:nth-child(13){
+        display: none;
+    }
+    #navbar{
+        grid-area: 1 / 1 / 2 / 10;
+        background-color: #00cc66;
+    }
+
+    #signUp input{
+        max-width: 80%;
+    }
+}

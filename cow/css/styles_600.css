@@ -1,0 +1,124 @@
+@media only screen and (max-width:600px){
+    nav{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        position: fixed;
+        top: 32px;
+        z-index: 2;
+    }
+
+    @supports (-webkit-touch-callout: none) {
+        .wave{
+            opacity: 0.2;
+        }
+    }
+
+    #navLogo {
+        left: -24px;
+    }
+
+    #hamburger{
+        left: calc(100% - 24px);
+        top: -12px;
+    }
+
+    #masthead{
+        top: 32px;
+    }
+
+    #navbar{
+        transform: translateY(-32px);
+        height: 80px;
+    }
+    
+    #hamburgerMenu{
+        width: 100vw;
+        height: 94vh !important;
+        position: fixed;
+        left: -32px;
+        top: 32px;
+        background-color: transparent;;
+    }
+    #hamburgerMenu li{
+        line-height: 220%;
+    }
+    #hamburgerMenu li a{
+        font-size: 320%;
+        margin-left: -300px;
+        transition: margin 0.625s;
+    }
+
+    .wave{
+        margin-top: 16px !important;
+    }
+
+    #lead h1{
+        margin: 16px 10% 24px 10%;
+    }
+
+    #typing{
+        font-size: 64px;
+        line-height: 60px;
+        margin-bottom: 24px;
+    }
+
+    #cursor{
+        transform: translateY(0px);
+    }
+    #cursorSVG{
+        height: 60px;
+        width: 8px;
+    }
+
+    #mockup{
+        margin: 2vh auto auto 10%;
+    }
+
+    .MOO{
+        font-size: 180px;
+        line-height: 100%;
+        color: #00cc66;
+        font-family: cubano, sans-serif;
+        transform: translateX(260vw);
+        transition: 7s transform ease-out;
+        margin-top: 50%;
+    }
+
+    #landingPageAnimation{
+        grid-column: 1/span 2;
+    }
+
+    #animationContaine{
+        top:12px;
+        flex-wrap: wrap;
+    }
+
+
+    .lm{
+        margin-top:0vh;
+        color: var(--pink);
+    }
+
+    #goodbye{
+        margin: 10% -5%;
+        line-height: 100%;
+    }
+
+    #signUp button{
+        width: 33%;;
+    }
+
+    .logIn button{
+        width:35% !important;
+    }
+
+    #hello{
+        font-size: 48px;
+    }
+    
+    #dashboard h2{
+        font-size: 32px;
+        margin-top: -120px;
+        font-family: var(--script);
+    }
+
+}
