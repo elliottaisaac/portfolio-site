@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin: none;
+	padding: none;
+}
+
+body{
+	background-color:silver;
+	font-family:sans-serif;
+	font-size: 100%;
+	}
+#wrapper{
+	width:90%;
+	height:100vh;
+	z-index: 0;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 4fr 1fr 4fr;
+ 	grid-template-rows: 1fr 4fr 8fr;
+	}
+
+.letter{
+	font-size: 2.42em;
+	width:75px;
+	height:75px;
+	color:#ed0b29;
+	background-color:ghostwhite;
+	border-radius: 4px;
+	font-weight: bolder;
+	outline: none;
+	margin-top: 3px;
+	}
+
+.letter:hover{
+	color:ghostwhite;
+	background-color:#ed0b29;
+}
+
+.guessed,.guessed:hover{
+	color:transparent;
+	background-color:#161530;
+}
+
+#letterBank{
+	grid-row: 2/3;
+	grid-column: 1/2;
+} 
+
+#feedback{
+	grid-row: 3/4;
+	grid-column: 1/2;
+}
+
+canvas{
+	box-shadow: none;
+	border-radius:20px;
+	grid-row: 2/4;
+	grid-column: 3/4;
+	background-color: silver;
+	background-image: linear-gradient(335deg, #b00 23px, transparent 23px),
+	linear-gradient(155deg, #d00 23px, transparent 23px),
+	linear-gradient(335deg, #b00 23px, transparent 23px),
+	linear-gradient(155deg, #d00 23px, transparent 23px);
+	background-size: 58px 58px;
+	background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+
+#guessBox,#mysteryBox,#reset{
+	width:75%;
+	color:ghostwhite;
+	font-size: 1.4em;
+	letter-spacing: 1px;
+	background-color:#ed0b29;
+	border-radius: 10px;
+	padding: 5px;
+	font-weight: bold;
+	margin-top:25px;
+	text-align: center;
+}
+
+#mysteryBox{
+	font-size:1.75em;
+	width: 50%;
+	letter-spacing: 3px;
+}
+
+#lives{
+	font-size: 2em;
+	color:ghostwhite;
+	background-color: transparent;
+	border: none;
+	width:50%;
+	text-align:center;
+	vertical-align: middle;
+}
+
+#result{
+	font-size:4.2em;
+	font-weight: bold;
+	color:#ed0b29;
+	margin-top:20px;
+	line-height:85%;
+}
+
+#reset{
+	font-weight: bold;
+	letter-spacing:1px;
+	color:#ed0b29;
+	background-image: radial-gradient(#fff, whitesmoke);
+	border: 1px solid black;
+	transition:color 0.5s ease-in-out, letter-spacing 0.5s ease-in-out, background 0.25s ease-in-out;
+	outline:none;
+	width: 25%;
+	margin-bottom: 20px;
+}
+
+#reset:hover{
+	color:ghostwhite;
+	background-image: radial-gradient(#ed0b29, red);
+}
+
+#reset:active{
+	background-image: radial-gradient(red, #ed0b29);
+	color:ghostwhite;
+	letter-spacing:0px;
+	outline:none;	
+}
+
+@media only screen and (max-width: 980px){
+	wrapper{
+	grid-template-columns: auto;
+ 	grid-template-rows: 2fr 1fr 1fr;
+	}	
+	
+	#letterBank{
+	grid-row: 1/2;
+	grid-column: 1/1;
+	} 
+	
+	#feedback{
+	grid-row: 2/3;
+	grid-column: 1/1;
+	}
+	
+	canvas{
+	grid-row: 3/4;
+	grid-column: 1/1;
+	}
+}

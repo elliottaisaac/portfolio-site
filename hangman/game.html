@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hangman!</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="wordlist.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+
+<div id="letterBank">
+<input type="button" name="userGuess" id="A" class="letter" value="A">
+<input type="button" name="userGuess" id="B" class="letter" value="B">
+<input type="button" name="userGuess" id="C" class="letter" value="C">
+<input type="button" name="userGuess" id="D" class="letter" value="D">
+<input type="button" name="userGuess" id="E" class="letter" value="E">
+<input type="button" name="userGuess" id="F" class="letter" value="F">
+<input type="button" name="userGuess" id="G" class="letter" value="G">
+<input type="button" name="userGuess" id="H" class="letter" value="H">
+<input type="button" name="userGuess" id="I" class="letter" value="I">
+<input type="button" name="userGuess" id="J" class="letter" value="J">
+<input type="button" name="userGuess" id="K" class="letter" value="K">
+<input type="button" name="userGuess" id="L" class="letter" value="L">
+<input type="button" name="userGuess" id="M" class="letter" value="M">
+<input type="button" name="userGuess" id="N" class="letter" value="N">
+<input type="button" name="userGuess" id="O" class="letter" value="O">
+<input type="button" name="userGuess" id="P" class="letter" value="P">
+<input type="button" name="userGuess" id="Q" class="letter" value="Q">
+<input type="button" name="userGuess" id="R" class="letter" value="R">
+<input type="button" name="userGuess" id="S" class="letter" value="S">
+<input type="button" name="userGuess" id="T" class="letter" value="T">
+<input type="button" name="userGuess" id="U" class="letter" value="U">
+<input type="button" name="userGuess" id="V" class="letter" value="V">
+<input type="button" name="userGuess" id="W" class="letter" value="W">
+<input type="button" name="userGuess" id="X" class="letter" value="X">
+<input type="button" name="userGuess" id="Y" class="letter" value="Y">
+<input type="button" name="userGuess" id="Z" class="letter" value="Z">
+</div>
+
+<canvas id="hangcanvas" height="550px" width="500px"></canvas>
+
+<div id="feedback">
+	<div id="guessBox">
+	<p>Wrong guesses remaining: <span id="lives">6</span></p>
+	</div>
+
+	<div id="mysteryBox">
+	</div>
+
+	<div id="result">
+	</div>
+	
+	<button id="reset">New Game</button>
+	</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
