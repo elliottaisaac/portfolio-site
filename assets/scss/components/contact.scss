@@ -1,0 +1,75 @@
+#BusinessInfo{
+   font-size:3em; 
+   margin:150px 0 100px 0;
+   letter-spacing: 2px;
+   line-height: 107%;
+}
+
+
+
+#contactForm{
+    width:66%;
+    margin:auto;
+}
+
+.formLabel{
+    font-family: $secondaryFont;
+    text-transform: lowercase;
+}
+
+.textField,
+.textField:focus,
+.textField:-webkit-autofill,
+.textField:-webkit-autofill:hover, 
+.textField:-webkit-autofill:focus, 
+.textField:-webkit-autofill:active {
+    background-color: transparent !important;
+    border:none;
+    box-shadow: none;
+    border-bottom: 1px solid black;
+    color:$blue;
+    -webkit-box-shadow: 0 0 0 30px #f4f1ed inset !important;
+    -webkit-text-fill-color: $blue !important;
+}
+
+#submitContact{
+    width: 100%;
+    font-size: 1.375em;
+    text-transform: lowercase;
+    margin: 50px 0 125px 0;
+    vertical-align: text-top;
+}
+
+.textArrow{
+    vertical-align: text-top;
+}
+
+#confirmationMessage{
+   
+    padding:20px;
+    margin: 100px auto 350px auto;
+
+    p{
+        font-weight: bold;
+        font-size: 1.75em;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #BusinessInfo{
+        font-size: 1.5em;
+        margin: 60px 0 48px 7.5%;
+        letter-spacing: 1px;
+        line-height: 120%;
+    }
+
+    #contactForm{
+        width:90%;
+    }
+
+    #submitContact{
+        margin: 0px 0 45px 0;
+    }
+}
+

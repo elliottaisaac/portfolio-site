@@ -1,0 +1,94 @@
+footer{
+    height: 500px;
+    background-color:$orange;
+    color:white;
+    font-family: orator-std, monospace;
+    a,a:link,a:visited{
+        color:white;
+    }
+
+    li{
+        list-style-type: none;
+        line-height: 50px;
+        font-size: 1.5em;
+
+        span{
+            padding-bottom: 2px;
+            border-bottom: 2px solid white;
+        }
+    }
+}
+
+#footerLinks{
+    margin-bottom: 50px;
+    
+    li{
+        text-transform: lowercase;
+    }
+
+    a:hover{
+        color: $blue;
+    }
+}
+
+#footerContent{
+    width:80%;
+    margin:auto;
+    padding-top:75px;
+}
+
+#smLinks{
+    text-align: right;
+    font-size: 1.5em;
+    
+    a{
+        text-decoration: underline;
+        text-transform: lowercase;
+        padding: 5px;
+        color:$blue;
+    }
+}
+
+#contactInfo{
+    margin-left:15px;
+    font-family:  sofia-pro, sans-serif;
+}
+
+@media only screen and (max-width:600px)  {
+    #smLinks{
+        text-align: left;
+        margin: 0 0 35px 0px;
+        font-size:1.2em;
+    }
+
+    footer{
+        li{
+            font-size: 1.4em;
+        }
+
+        .BlueLine{
+            color:white;
+        }
+    }
+    
+
+    #footerContent{
+        padding-top:50px;
+        margin: auto;
+        width:90%;
+    }
+}
+
+footer{
+    .rightArrow{
+        background-image: url('/assets/img/navWhiteArrowRight.svg');
+    }
+
+    #fCont-a:hover .rightArrow, #fCap-a:hover .rightArrow, #fJobs-a:hover .rightArrow{
+        background-image: url('/assets/img/navArrowRight.svg');
+    }
+
+    .BlueLine{
+        transition: width 0.2s ease-out;
+    }
+}

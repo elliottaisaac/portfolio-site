@@ -1,0 +1,322 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#top-nav{
+    margin-bottom:20px;
+}
+
+.dark{
+    background: #151515!important;
+}
+.darkNav{
+    background:#151515!important;
+    margin-top:0!important;
+    padding: 20px 0 15px 5px;
+}
+
+#top-nav, #top-bar{
+    background-color: #373449 !important;
+    display:flex;
+    flex-wrap: nowrap;
+    margin:25px auto 0 auto;
+    width:75rem;
+    text-transform: lowercase;
+
+    .Blogo{
+        width:25px;
+        height:35px;
+        position: fixed; 
+        transform: translate(-50px,5px) !important;
+        background-image: url("/assets/img/logo.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .BlogoMobile{
+        width:18px;
+        height:25px;
+        background-image: url("/assets/img/logo.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 8px 0 0 7.5%;
+    }
+
+    .burger{
+        width:28px;
+        height:28px;
+        background-image: url("/assets/img/burger.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 26px 12px 0 0;
+    }
+
+    #BlogoDark{
+        background-image: url("/assets/img/whiteLogo.svg");
+    }
+
+    .Blogo:hover, .Blogo:active, #BlogoDark:hover, #BlogoDark:active {
+        background-image: url("/assets/img/blueLogo.svg");
+    }
+
+    .logo{
+        justify-content: flex-start;
+        }
+
+    #wordmark{
+        width:50%;
+        margin-top:15px;
+    }    
+
+    ul{
+        justify-content: flex-end;
+        width: calc(100% - 25px);
+        margin: 0px;
+        text-align: right;
+        li{
+            color:black;
+            font-family: $secondaryFont;
+            font-size: 1.33em;
+            flex-basis:10%;
+            display: inline-block;
+            text-decoration: none;
+            list-style-type: none;
+            padding: 10px 8px 0 12px;
+            margin-left: 15px;
+            letter-spacing: -1px;
+            -webkit-font-smoothing: subpixel-antialiased !important;
+
+            a{
+                transition: color 0.5s ease-out;
+            }
+        }
+
+        li:link, li:visited, a:link, a:visited{
+            color: #fefefe;;
+        }
+
+        li:active{
+            color:$blue;
+        }
+
+        li:hover,a:hover, .navAnimLine:hover{
+            color:$primary-color;
+        }
+
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #top-bar{
+        margin: 10px 0 0 10px !important;
+    }
+}
+
+#top-bar{
+    display:none;
+    margin: 40px 40px 0 0;
+    font-size:2.125rem;
+    
+    button{
+        outline: none;
+    }
+    button:hover,button:active{
+        color: $blue;
+    }
+
+    .logo{
+        margin:0 0 75px 15px;
+        top:-25px;
+    }
+}
+
+#nav_main{
+    background-color:$blue;
+    font-family: orator-std, monospace;
+    font-weight: 400;
+    outline: none;
+
+    .BlogoMobile{
+        height: 30px;
+        margin: 24px 0 0 38px;
+    }
+
+    #navMenu{
+        width:80%;
+        margin:auto;
+        background-color: $blue;
+        margin-top:48px;
+
+        li{
+            text-decoration: none;
+            font-size:2.875em;
+            letter-spacing: -6px;
+            text-transform:lowercase;
+            border-bottom: 2px solid transparent;
+            text-decoration: none;
+            list-style-type: none;
+            a{
+                color:white;
+            }
+        }
+        li:hover,li:active{
+            color:black !important;
+        }
+    }
+  
+    .BlueLine{
+        background-color: black !important;
+        transform: translate(0,-52px) !important;
+    }   
+
+    li:hover,li:active{
+        border-bottom: 2px solid white;
+    }
+
+    footer{
+        background-color:$blue;
+        border-top: 1px solid black;
+        color: $black;
+        margin-top: 48px;
+        height: auto;
+
+        .rightArrow{
+            background-image: url('/assets/img/navBlackArrowRight.svg') !important;
+        }
+
+        #fCont-a:hover .rightArrow, #fCap-a:hover .rightArrow, #fJobs-a:hover .rightArrow{
+            background-image: url('/assets/img/navWhiteArrowRight.svg') !important;
+        }
+
+        #smLinks{
+            a{
+                background-color: black;
+                padding:6px 6vw 6px 6vw;
+                text-decoration: none;
+                letter-spacing: -1px;
+                font-size: .875em;
+            }
+        }
+
+        ul{
+            width:100%;
+            margin-top: -32px !important;
+            margin-left: 0px !important;
+        }
+        
+        li{
+          font-size: 1.5rem;
+          line-height: 45px;
+        }
+
+        li:link,li:visited,li:hover,li:active{
+            border-bottom: 2px solid transparent;
+        }
+
+        #footerLinks{
+            margin-bottom: 24px !important;
+            a{
+                color:black !important;
+            }
+            a:hover{
+                color: white !important;
+            }
+        }
+
+        #contactInfo{
+            padding:0;
+            margin:0 0 32px 0;
+            color:black;
+            -webkit-font-smoothing: subpixel-antialiased;
+        }
+    }
+
+    li:link, li:visited{
+        color: white !important;
+    }
+}
+
+@media only screen and (max-width:800px)  {
+    #top-nav, #top-bar{
+        width: 90vw;;
+
+        .Blogo{
+            position: static;
+            transform: translate(-6px,8px) !important;
+        }
+    }
+}
+
+@media only screen and (max-width:600px)  {
+ 
+  #top-bar{
+      display:block;
+      color:white;
+      width:90vw;
+
+      button{
+          color:$blue;
+      }
+  }
+
+  #navMenu{
+      width:85vw;
+  }
+
+  #top-nav{
+      display:none;
+      width: 90vw;
+  }
+
+  #x{
+      color:black;
+      font-weight:500;
+      font-size:2.875rem;
+      margin: 15px 32px 0 0
+  }
+  #x:hover,#x:active{
+    color: white;
+  }
+
+  .logo{
+      margin:10px 0 0 5px;
+  }
+
+  .darkNav{
+      background:#151515!important;
+  }
+
+}
+
+
+.BlueLine{
+    width:0px;
+    height:2px;
+    background:#0031FF;
+    position: relative;
+    top:20px;
+    z-index: 2;
+    transform: translate(0px, -36px);
+    transition: width 0.5s ease-out;
+    pointer-events: none;
+}
+
+.work:hover ~ .workAnimLine, .workAnimLine:hover, .serv:hover ~ .servAnimLine, .servAnimLine:hover, .cult:hover ~ .cultAnimLine, .cultAnimLine:hover, .cont:hover ~ .contAnimLine, .contAnimLine:hover{
+    width:100% !important;
+}
+
+.nextAnimLine{
+    transform: translate(0px, -22px);
+    transition: width 0.125s ease-out;
+}
+
+.strikeThruLine,.strikeThruLine:hover{
+    width:100% !important;
+    background-color: black !important;
+}
+
+.prevAnimLine{
+    transform: translate(-88px, -22px);
+    margin-left: 100%;
+    transition: margin-left 0.2s ease-out, width 0.2s ease-out !important;
+}

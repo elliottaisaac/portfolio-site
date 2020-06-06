@@ -1,0 +1,547 @@
+
+.strikeThru, .strikeThru:hover{
+   text-decoration: line-through !important;
+   color: black !important;
+}
+
+h2,h3{
+    letter-spacing: -3px;
+    font-weight: 700;
+}
+
+h2{
+    margin-top:80px;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width:600px) {
+    h2{
+        margin:25px 0 0 7.5%;
+    }
+
+    #Work{
+        h2{
+            margin-left: 0% !important;
+        }
+        .upper{
+            margin-left: 0% !important;
+        }
+    }
+
+    .workGallery{
+        width:90%;
+        padding-left: 0px !important;
+    }
+}
+
+.workText{
+    transform: translate(17px, 0px) !important;
+    margin-top:25px !important;
+    font-size: 24px !important;
+    line-height: 31px !important;
+
+    p{
+        font-size: 24px !important;
+        line-height: 31px !important;
+    }
+}
+
+.Text{
+    width:60%;
+    font-size: 1.25em;
+    margin:50px 0 50px 0;
+    font-weight:500;
+}
+
+.workSampleBox{
+    transition: transform 1s ease-in-out;
+}
+
+.overflow{
+    overflow:hidden;
+}
+
+
+.workImgLink{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:315px;
+    width:566px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    transition: background-color 0.75s ease-out;
+    
+}
+
+@media only screen and (max-width:800px)  {
+    .workImgLink{
+        width: calc(44vw - 24px)!important;
+        height: calc((44vw - 24px) * .552)!important;
+    }
+    .workSampleBox{
+        width:50vw;
+        height:calc(50vw * 0.555) !important;
+    }
+    .workGridRow{
+        height: calc(22.5vw + 16px);
+        margin-left:6vw !important;
+        margin-right: 6vw !important;
+    }
+}
+
+
+@media only screen and (max-width:600px) {
+    .workImgLink{
+        width: 90vw;
+        height: calc(100vw * 0.555);
+        margin-bottom: 20px;
+    }
+}
+
+.workImgLink:hover {
+    filter: contrast(125%) brightness(100%);
+    background-color: $primary-color;
+    background-blend-mode: overlay;
+ }
+
+ 
+
+ .linkContainer{
+     padding: 0px;
+     margin: 0px;
+ }
+
+.workImgHeader{
+    color:white;
+    font-size: 1.375em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px 0px 0px 20px;
+}
+
+@media only screen and (max-width:600px) {
+    .workImgHeader{
+        padding:10px;
+    }
+    .prev, .rightBottomNav, .homeViewMore, .returnWork{
+        font-size: 1.625em;
+    }
+}
+
+.bottomNav{
+    font-family: orator-std, monospace;
+    color:$blue;
+    font-size:1.25em;
+    text-align: center;
+    padding:50px 0 150px 0;
+    width: 75rem;
+
+    a{
+       // border-bottom: 2px solid $blue;
+        text-transform: lowercase;
+        -webkit-font-smoothing: initial !important;
+    }
+
+    .prev, .returnWork{
+        text-align: right;
+        float: left;
+        padding-left: 24px;
+        width: auto;
+    }
+
+    .rightBottomNav, .nextProject{
+        text-align: left;
+        float: right;
+        padding-right: 24px;
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+   .bottomNav{
+        background-color: $blue;
+        width:100vw;
+        color:white;
+        font-size:1em;
+        padding-bottom: 66px;
+
+        .rightBottomNav, .prev, .homeViewMoreDiv, .returnWork{
+            a{
+                color:white;
+            }
+        }
+
+        .BlueLine{
+            background-color: white;
+        }
+
+        .leftArrow{
+            background-image: url('/assets/img/navWhiteArrowLeft.svg') !important;
+           width: 30px;
+           height: 15px;
+       }
+       .rightArrow{
+            background-image: url('/assets/img/navWhiteArrowRight.svg') !important;
+            width: 30px;
+            height: 15px;
+        }
+   }
+}
+
+.rightArrow, .leftArrow{
+    display: inline-block;
+    width:20px;
+    height:10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(0px, 0px);
+    transition: transform .5s ease-in-out;
+}
+.leftArrow{
+    background-image: url('/assets/img/navArrowLeft.svg');
+}
+.rightArrow{
+    background-image: url('/assets/img/navArrowRight.svg');
+}
+
+.prev:hover .leftArrow, .returnWork:hover .leftArrow {
+    transform: translate(-24px, 0px);
+  
+} 
+
+.rightBottomNav:hover .rightArrow, .homeViewMoreDiv:hover .rightArrow, #hireUs:hover .rightArrow, .nextProject:hover .rightArrow, #submitContact:hover .rightArrow, #fCont:hover .rightArrow, #fCap:hover .rightArrow, #fJobs:hover .rightArrow{
+    transform: translate(24px, 0px);
+      /*animation-duration: 1s;
+    animation-iteration-count: infinite;  */
+} 
+
+#hireUs{
+    .rightArrow{
+        background-image: url('/assets/img/navArrowRight.svg');
+    }
+} 
+#hireUs:active{
+    .rightArrow{
+        background-image: url('/assets/img/navWhiteArrowRight.svg');
+        background-color: $blue;
+        color:white;
+    }
+}
+/*
+.prev, .rightBottomNav, .homeViewMoreDiv, #hireUs, .returnWork, .nextProject{
+    animation-delay: 10000s;
+
+.bounceArrowRight {
+    animation-name: bounceArrowRight;
+    animation-timing-function: linear;
+}
+@keyframes bounceArrowRight {
+    0%   { transform: scale(1,1)      translateX(0); }
+    10%  { transform: scale(.9,1.1)   translateX(0); }
+    60%  { transform: scale(1.15,.85)   translateX(36px); }
+    80%  { transform: scale(.8,1.2) translateX(0); }
+    95%  { transform: scale(1.05,.95)      translateX(-2px); }
+    100%  { transform: scale(1,1)      translateX(2px); }
+}
+
+@keyframes bounceArrowRight {
+    0%   { transform: scale(1,1)      translateX(0); }
+    10%  { transform: scale(1.1,1)   translateX(0); }
+    30%  { transform: scale(.85,1)   translateX(33px); }
+    50%  { transform: scale(1.05,1) translateX(0); }
+    59%  { transform: scale(.95,1)      translateX(14px); }
+    64%  { transform: scale(1.025,1)      translateX(0); }
+    69%  { transform: scale(.975,1)      translateX(4px); }
+    74% { transform: scale(1,1)      translateX(0); }
+    100% { transform: scale(1,1)      translateX(0); }
+}
+
+.bounceArrowLeft {
+    animation-name: bounceArrowLeft;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+
+@keyframes bounceArrowLeft {
+    0%   { transform: scale(1,1)      translateX(0); }
+    10%  { transform: scale(.9,1.1)   translateX(0); }
+    60%  { transform: scale(1.15,.85)   translateX(-36px); }
+    80%  { transform: scale(.8,1.2) translateX(0); }
+    95%  { transform: scale(1.05,.95)      translateX(2px); }
+    100%  { transform: scale(1,1)      translateX(-2px); }
+}
+
+@keyframes bounceArrowLeft {
+    0%   { transform: scale(1,1)      translateX(0); }
+    10%  { transform: scale(1.1,1)   translateX(0); }
+    30%  { transform: scale(.85,1)   translateX(-33px); }
+    50%  { transform: scale(1.05,1) translateX(0); }
+    59%  { transform: scale(.95,1)      translateX(-14px); }
+    64%  { transform: scale(1.025,1)      translateX(0); }
+    69%  { transform: scale(.975,1)      translateX(-4px); }
+    74% { transform: scale(1,1)      translateX(0); }
+    100% { transform: scale(1,1)      translateX(0); }
+}
+*/
+
+
+
+@media only screen and (max-width:800px){
+    .rightBottomNav{
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .workText{
+            margin-top: 40px !important;
+            margin-bottom: 50px !important;
+    }
+    .workSampleBox{
+        transition: transform 0.375s ease-in-out;
+    }
+}
+
+.workSampleHeader{
+    font-size: 2em;
+    letter-spacing: 0px;
+    transform: translate(0px, -14px);
+}
+
+.task{
+    color: $blue;
+    margin: 0 0 64px 0;
+    font-family: orator-std, monospace !important;
+    letter-spacing: -1px;
+    text-transform: lowercase;
+    -webkit-font-smoothing: initial !important;
+    transform: translate(0px, 2px);
+}
+
+.caseStudyText{
+    font-size:1.625em;
+    margin: 75px 20% 0px 20%;
+    line-height: 150%;
+}
+@media only screen and (max-width:800px) {
+    .caseStudyText{
+         margin: 75px 7.5% 0px 7.5%;
+    }
+}
+
+.caption{
+    border-top: 1px solid black;
+    margin:30px 0px 25px 0;
+    width:100%;
+
+    h5{
+        letter-spacing: -1px;
+    }
+
+    .light{
+        color:white;
+    }
+}
+
+.caption.light{
+    border-top: 1px solid white;
+}
+
+.lightCaption{
+    .caption{
+        border-top: 1px solid white;
+        h5{
+            color: white;
+        }
+    }
+}
+
+.industry{
+    color:$gray;
+    margin:0 0 50px 20%;
+    font-family: orator-std, monospace;
+    text-transform: lowercase;
+    font-size: 1em;
+    letter-spacing: -2px;
+}
+@media only screen and (max-width:800px) {
+    .industry{
+        margin:0 0 50px 10%;
+    }
+}
+
+.smallHeight{
+    height:200px;
+}
+
+.medHeight{
+    height:315px;
+}
+
+.largeHeight{
+    height:500px;
+}
+
+
+.gridMargins{
+    margin-bottom:0px !important;
+}
+
+.workSampleHeader{
+    margin: 120px 0 12px 0;
+}
+
+@media only screen and (max-width:800px){
+    .workSampleHeader, .task{
+        margin-left: 7.5%;
+    }
+
+    .casestudyHero{
+        background-size: cover !important;
+        height: 275px !important;
+        background-repeat: no-repeat;
+        background-position-x: center !important;
+        background-position-y: center !important;
+    }
+
+    .CSbackgroundImg{
+        height:42vw;
+        background-size: contain !important;
+        margin-bottom: 12px;
+    }
+
+    .image-bar{
+        padding-top:24px !important;
+        padding-bottom: 24px !important;;
+    }
+
+}
+
+.caseStudyHeaderText{
+    margin: 120px 0 84px 0;
+    padding: 0 96px 0 75px;
+    text-align: left;
+    font-size: 1.125em;
+}
+@media only screen and (max-width:600px) {
+    .caseStudyHeaderText{
+        padding:0 7.5% 0 7.5%;
+        margin: 10px 0 50px 0;
+    }
+}
+
+.CSbackgroundImg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.casestudyHero{
+    width:100vw;
+    height:550px;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-bar{
+    padding-left: calc(50vw - 37.5rem);
+    padding-right: calc(50vw - 37.5rem);
+    padding-top:0px;
+    padding-bottom: 24px;
+}
+
+
+@media only screen and (min-width:800px) {
+    .bleed{
+        max-width: 100vw !important;
+        padding:0px !important;
+    }
+}
+
+.image-bar h5{
+    font-family: orator-std, monospace;
+    text-transform: lowercase;
+}
+
+
+@media only screen and (max-width:600px) {
+    .caseStudyHeaderText, .caseStudyText{
+        font-size: 1em;
+        line-height: 125%;
+    }
+    .caseStudyHeaderText{
+        margin-bottom: 56px !important;
+        margin-top: 0px  !important;
+    }
+    .caseStudyText{
+        margin-top: 48px !important;
+    }
+
+    .task, .industry{
+        font-size: .875em;
+    }
+    .industry{
+        margin-left: 7.5%;
+    }
+
+    .casestudyHero{
+        width:100vw;
+        height: 285px !important;
+        margin:0 0 0 -10px;
+        background-size: cover !important;
+    }
+
+    .image-bar{
+        width:100vw;
+        margin:0 0 0 -10px;
+    }
+
+    .workSampleHeader{
+        margin-top: 60px;
+    }
+
+    .nextProject, .rightBottomNav{
+        text-align: center;
+        margin-top: 72px;
+    }
+
+    .returnWork{
+        margin-top:32px;
+    }
+
+    .caption{
+        margin: 24px 2vw 12px 2vw;
+        width: 96vw;
+        h5{
+            font-size: .875rem;
+            letter-spacing: -2px;
+        }
+    }
+
+    .CSbackgroundImg{
+        height: 225px;
+        background-size: cover !important;
+        width: calc(90% - 20px)!important;
+        margin-bottom: 12px;
+        margin-right: 5vw !important;
+        margin-left: calc(5vw + 10px) !important;
+    }
+
+   .videoRow{
+       margin-left: 0px !important;
+       width: 100vw !important;
+   }
+
+   .casestudyHeroVid{
+        margin-left: -10px;
+        margin-bottom: -10px;
+   }
+
+   h2{
+       line-height: 1.0;
+       margin-top: 60px !important;
+       margin-bottom: 24px !important;
+   }
+
+}
